@@ -20,7 +20,7 @@ class GamesController < ApplicationController
     elsif parsed['found'] == false
       @answer = "Sorry but #{@word} does not seem to be a valid English word..."
     else
-      @answer = "Congratulations! #{word} is a valid English word!"
+      @answer = "Congratulations! #{@word} is a valid English word!"
     end
     @answer
   end
